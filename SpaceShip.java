@@ -1,6 +1,6 @@
 //package naveespacial;
 
-public abstract class SpaceShip {
+public abstract class SpaceShip implements Movement{
     //properties variables
     double masa;
     double capacidad;
@@ -8,10 +8,10 @@ public abstract class SpaceShip {
     int motores;
 
     //position variables
-    //in mm
-    int xLocation;
-    int yLocation;
-    int zLocation;
+    //in km
+    double xLocation;
+    double yLocation;
+    double zLocation;
     //in radians
     double xRotation;
     double yRotation;
@@ -48,6 +48,27 @@ public abstract class SpaceShip {
         return motores;
     }
     
+    //marks the relative movement in X,Y,Z coordinates, in km
+    public void move(double x, double y, double z){    
+        xLocation += x;
+        yLocation += y;
+        zLocation += z;
+    }
+    //rotates n radians along X, Y or Z axis
+    public void rotate(double twist, char axis){
+            switch (axis){
+            case 'X':
+                xRotation+=twist;
+                break;
+            case 'Y':
+                yRotation+=twist;
+                break;
+            case 'Z':
+                zRotation+=twist;
+                break;
+        }
+    }
+
     /*
     abstract void setMass (double masa);
     //masa must be in kilograms
