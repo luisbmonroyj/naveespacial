@@ -1,3 +1,5 @@
+package naveespacial;
+
 public class SpaceCraft extends SpaceShip{
     //A spacecraft has tripulation
     //stops engines

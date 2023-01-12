@@ -1,3 +1,5 @@
+package naveespacial;
+
 public class Shuttle extends SpaceShip{
     
     //method overriding

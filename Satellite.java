@@ -1,3 +1,5 @@
+package naveespacial;
+
 public class Satellite extends SpaceShip{
     //a Satellite is a non tripulated spacecraft
     //Satellites don't have engines

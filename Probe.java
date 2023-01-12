@@ -1,3 +1,5 @@
+package naveespacial;
+
 public class Probe extends SpaceShip{
     //a probe is a non tripulated spacecraft
     //stops engines

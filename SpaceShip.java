@@ -1,4 +1,4 @@
-//package naveespacial;
+package naveespacial;
 
 public abstract class SpaceShip implements Movement{
     //properties variables

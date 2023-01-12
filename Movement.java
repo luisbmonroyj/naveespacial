@@ -1,3 +1,5 @@
+package naveespacial;
+
 public interface Movement {
     //this interface gathers the common methods of spaceships
     public void move(double x, double y, double z); //marks the relative movement in X,Y,Z coordinates, in km
